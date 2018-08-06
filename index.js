@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 var prefix = "WN/"
 
-client.login("NDYxMjM5NDg4NDYzNTAzMzYx.DhQaRA.aP8TrQlZKEamHJ5m9xP1lAmKiVc");
+client.login(process.env.TOKEN);
 
 client.on('ready', function() {
     client.user.setActivity(`WN/help | ${client.guilds.size} serveur | ${client.users.size} joueur `, {type: "STREAMING"});
